@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  php:
+    build:
+      context: .
+    container_name: multiplechain-php
+    working_dir: /usr/src/packages
+    volumes:
+      - ./packages:/usr/src/packages
+    tty: true
+    init: true
